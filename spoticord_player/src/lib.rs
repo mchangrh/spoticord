@@ -99,7 +99,7 @@ impl Player {
         let player = SpotifyPlayer::new(
             PlayerConfig {
                 // 96kbps causes audio key errors, so enjoy the quality upgrade
-                bitrate: Bitrate::Bitrate160,
+                bitrate: Bitrate::Bitrate320,
                 ..Default::default()
             },
             session.clone(),
